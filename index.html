@@ -8,7 +8,7 @@
    <body>
       <h2>AngularJS Sample Application</h2>
       
-      <div ng-app = "mainApp" ng-controller = "studentController">
+      <div ng-app = "" >
          Enter first name: <input type = "text" ng-model = "name"><br><br>
        
          <br>
@@ -16,14 +16,7 @@
          You are entering: {{name}}
       </div>
       
-      <script>
-         var mainApp = angular.module("mainApp", []);
-         
-         mainApp.controller('studentController', function($scope) {
-            $scope.name = "Ankit"
-            
-         });
-      </script>
+    
       
    </body>
 </html>
