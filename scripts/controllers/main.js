@@ -8,8 +8,8 @@
  * Controller of the clientApp
  */
 angular.module('myapp')
-  .controller('MainCtrl', function () {
-    scope.variable = [
+  .controller('MainCtrl', function ($scope) {
+    $scope.variable = [
       'Hello',
       'I am Ankit',
       'nice to meet you!!'
