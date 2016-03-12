@@ -1,41 +1,27 @@
-'use strict';
-
-/**
- * @ngdoc overview
- * @name clientApp
- * @description
- * # clientApp
- *
- * Main module of the application.
- */
- 
-
-var myapp = angular
-  .module('myapp', [
- 
-  ]);
-  
-  myapp.controller('control123', function($scope) {
-            $scope.yourname = "Ankit Awal";
+var mainApp = angular.module("mainApp", ['ngRoute']);
+         mainApp.config(['$routeProvider', function($routeProvider) {
+            $routeProvider.
+            
+            when('/addStudent', {
+               templateUrl: 'addStudent.htm',
+               controller: 'AddStudentController'
+            }).
+            
+            when('/viewStudents', {
+               templateUrl: 'viewStudents.htm',
+               controller: 'ViewStudentsController'
+            }).
+            
+            otherwise({
+               redirectTo: '/addStudent'
+            });
+         }]);
+         
+         mainApp.controller('AddStudentController', function($scope) {
+            $scope.message = "This page will be used to display add student form";
          });
          
-         
-  // myapp.config(function ($routeProvider) {
-  //   $routeProvider
-  //     .when('/', {
-  //       templateUrl: '/views/main.html',
-  //       controller: 'MainCtrl',
-  //       controllerAs: 'main'
-  //     })
-  //     .when('/hey', {
-  //       templateUrl: '/views/main.html',
-  //       controller: 'MainCtrl',
-  //       controllerAs: 'main'
-  //     })
-  //     .otherwise({
-  //       redirectTo: '/'
-  //     });
-  // });
-  
- 
-  
+         mainApp.controller('ViewStudentsController', function($scope) {
+            $scope.message = "This page will be used to display all the students";
+         });
+			
