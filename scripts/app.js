@@ -14,17 +14,17 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('#/', {
+      .when('/', {
         templateUrl: '/views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('#/hey', {
+      .when('/hey', {
         templateUrl: '/views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
       .otherwise({
-        redirectTo: '#/'
+        redirectTo: '/'
       });
   });
