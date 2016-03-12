@@ -5,18 +5,31 @@
       <script src = "https://cdn.jsdelivr.net/angularjs/1.5.0/angular.min.js"></script>
    </head>
    
-   <body ng-app>
-      <h2>AngularJS Sample wApplication</h2>
-      
-      <div  >
-         Enter first name: <input type = "text" ng-model = "name"><br><br>
-       
+     
+      <div ng-app = "mainApp" ng-controller = "studentController">
+         Enter first name: <input type = "text" ng-model = "student.firstName"><br><br>
+         Enter last name: <input type = "text" ng-model = "student.lastName"><br>
          <br>
          
-         You are entering: {{name}}
+         You are entering: {{student.fullName()}}
       </div>
       
-    
+      <script>
+         var mainApp = angular.module("mainApp", []);
+         
+         mainApp.controller('studentController', function($scope) {
+            $scope.student = {
+               firstName: "Mahesh",
+               lastName: "Parashar",
+               
+               fullName: function() {
+                  var studentObject;
+                  studentObject = $scope.student;
+                  return studentObject.firstName + " " + studentObject.lastName;
+               }
+            };
+         });
+      </script>
       
    </body>
 </html>
