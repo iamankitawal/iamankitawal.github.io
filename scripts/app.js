@@ -8,11 +8,13 @@
  *
  * Main module of the application.
  */
-angular
+ 
+
+var myapp = angular
   .module('myapp', [
     'ngRoute'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+  myapp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: '/views/main.html',
