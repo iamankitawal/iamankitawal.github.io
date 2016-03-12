@@ -9,27 +9,19 @@
       <h2>AngularJS Sample Application</h2>
       
       <div ng-app = "mainApp" ng-controller = "studentController">
-         Enter first name: <input type = "text" ng-model = "student.firstName"><br><br>
-         Enter last name: <input type = "text" ng-model = "student.lastName"><br>
+         Enter first name: <input type = "text" ng-model = "name"><br><br>
+       
          <br>
          
-         You are entering: {{student.fullName()}}
+         You are entering: {{name}}
       </div>
       
       <script>
          var mainApp = angular.module("mainApp", []);
          
          mainApp.controller('studentController', function($scope) {
-            $scope.student = {
-               firstName: "Mahesh",
-               lastName: "Parashar",
-               
-               fullName: function() {
-                  var studentObject;
-                  studentObject = $scope.student;
-                  return studentObject.firstName + " " + studentObject.lastName;
-               }
-            };
+            $scope.name = "Ankit"
+            
          });
       </script>
       
