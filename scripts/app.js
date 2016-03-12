@@ -14,19 +14,24 @@ var myapp = angular
   .module('myapp', [
  
   ]);
-  // myapp.config(function ($routeProvider) {
-  //   $routeProvider
-  //     .when('/', {
-  //       templateUrl: '/views/main.html',
-  //       controller: 'MainCtrl',
-  //       controllerAs: 'main'
-  //     })
-  //     .when('/hey', {
-  //       templateUrl: '/views/main.html',
-  //       controller: 'MainCtrl',
-  //       controllerAs: 'main'
-  //     })
-  //     .otherwise({
-  //       redirectTo: '/'
-  //     });
-  //});
+  myapp.config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: '/views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/hey', {
+        templateUrl: '/views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  });
+  
+ myapp.controller('control123', function($scope) {
+            $scope.yourname = "Ankit Awal";
+         });
+  
