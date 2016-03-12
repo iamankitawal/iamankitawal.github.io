@@ -8,7 +8,7 @@ var mainApp = angular.module("mainApp", ['ngRoute']);
             }).
             
             when('/viewStudents', {
-               templateUrl: 'views/main.html',
+               templateUrl: 'views/main1.html',
                controller: 'ViewStudentsController'
             }).
             
