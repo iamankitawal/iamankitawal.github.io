@@ -3,12 +3,12 @@ var mainApp = angular.module("mainApp", ['ngRoute']);
             $routeProvider.
             
             when('/addStudent', {
-               templateUrl: 'addStudent.htm',
+               templateUrl: 'views/main.html',
                controller: 'AddStudentController'
             }).
             
             when('/viewStudents', {
-               templateUrl: 'viewStudents.htm',
+               templateUrl: 'views/main.html',
                controller: 'ViewStudentsController'
             }).
             
