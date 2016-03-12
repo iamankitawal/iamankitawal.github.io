@@ -14,6 +14,12 @@ var myapp = angular
   .module('myapp', [
  
   ]);
+  
+  myapp.controller('control123', function($scope) {
+            $scope.yourname = "Ankit Awal";
+         });
+         
+         
   myapp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -31,7 +37,5 @@ var myapp = angular
       });
   });
   
- myapp.controller('control123', function($scope) {
-            $scope.yourname = "Ankit Awal";
-         });
+ 
   
