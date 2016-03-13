@@ -2,23 +2,23 @@ var mainApp = angular.module("mainApp", ['ngRoute']);
          mainApp.config(['$routeProvider', function($routeProvider) {
             $routeProvider.
             
-            when('/addStudent', {
+            when('/main', {
                templateUrl: 'views/main.html',
-               controller: 'AddStudentController'
+               controller: 'MainController'
             }).
             
-            when('/viewStudents', {
+            when('/cars', {
                templateUrl: 'views/main1.html',
                controller: 'ViewStudentsController'
             }).
             
             otherwise({
-               redirectTo: '/addStudent'
+               redirectTo: '/main'
             });
          }]);
          
-         mainApp.controller('AddStudentController', function($scope) {
-            $scope.message = "This page will be used to display add student form";
+         mainApp.controller('MainController', function($scope) {
+            $scope.message = "Cars";
          });
          
          mainApp.controller('ViewStudentsController', function($scope) {
