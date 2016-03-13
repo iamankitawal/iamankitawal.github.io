@@ -26,13 +26,13 @@
 	}
 	function openNav(){
 		open = true;
-	    button.innerHTML = "-";
+	    button.innerHTML = "<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>";
 	    classie.add(overlay, 'on-overlay');
 	    classie.add(wrapper, 'opened-nav');
 	}
 	function closeNav(){
 		open = false;
-		button.innerHTML = "+";
+		button.innerHTML = "<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>";
 		classie.remove(overlay, 'on-overlay');
 		classie.remove(wrapper, 'opened-nav');
 	}
