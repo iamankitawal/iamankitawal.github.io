@@ -24,7 +24,7 @@ body {
 	font-family: 'Lato', Arial, sans-serif;
 }
 
-.component > h2 {
+.component2 > h2 {
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
@@ -38,7 +38,7 @@ body {
 	cursor: default;
 }
 
-.cn-button {
+.cn-button2 {
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -61,7 +61,7 @@ body {
 	-webkit-backface-visibility: hidden;
 }
 
-.csstransforms .cn-wrapper {
+.csstransforms .cn-wrapper2 {
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -85,7 +85,7 @@ body {
 }
 
 /*cover to prevent extra space of anchors from being clickable*/
-.csstransforms .cn-wrapper:after{
+.csstransforms .cn-wrapper2:after{
   content:".";
   display:block;
   font-size:2em;
@@ -101,7 +101,7 @@ body {
   color: transparent;
 }
 
-.csstransforms .opened-nav {
+.csstransforms .opened-nav2 {
 	border-radius: 50%;
 	opacity: 1;
 	-webkit-transition: all .3s ease;
@@ -114,7 +114,7 @@ body {
 	pointer-events: auto;
 }
 
-.csstransforms .cn-wrapper li {
+.csstransforms .cn-wrapper2 li {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -137,7 +137,7 @@ body {
 	pointer-events: none;
 }
 
-.csstransforms .cn-wrapper li a {
+.csstransforms .cn-wrapper2 li a {
 	position: absolute;
 	right: -7.25em;
 	bottom: -7.25em;
@@ -163,7 +163,7 @@ body {
 	pointer-events: auto;
 }
 
-.csstransforms .cn-wrapper li a span {
+.csstransforms .cn-wrapper2 li a span {
 	position: relative;
 	top: 1.8em;
 	display: block;
@@ -172,84 +172,84 @@ body {
 	text-transform: uppercase;
 }
 
-.csstransforms .cn-wrapper li a:hover,
-.csstransforms .cn-wrapper li a:active,
-.csstransforms .cn-wrapper li a:focus {
+.csstransforms .cn-wrapper2 li a:hover,
+.csstransforms .cn-wrapper2 li a:active,
+.csstransforms .cn-wrapper2 li a:focus {
 	background: -webkit-radial-gradient(transparent 35%, #449e6a 35%);
 	background: -moz-radial-gradient(transparent 35%, #449e6a 35%);
 	background: radial-gradient(transparent 35%, #449e6a 35%);
 }
-.csstransforms .cn-wrapper li a:focus {
+.csstransforms .cn-wrapper2 li a:focus {
     position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
 }
 
-.csstransforms .opened-nav li {
+.csstransforms .opened-nav2 li {
 	-webkit-transition: all .3s ease .3s;
 	-moz-transition: all .3s ease .3s;
 	transition: all .3s ease .3s;
 }
 
-.csstransforms .opened-nav li:first-child {
+.csstransforms .opened-nav2 li:first-child {
 	-webkit-transform: rotate(-20deg) skew(60deg);
 	-moz-transform: rotate(-20deg) skew(60deg);
 	-ms-transform: rotate(-20deg) skew(60deg);
 	transform: rotate(-20deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(2) {
+.csstransforms .opened-nav2 li:nth-child(2) {
 	-webkit-transform: rotate(12deg) skew(60deg);
 	-moz-transform: rotate(12deg) skew(60deg);
 	-ms-transform: rotate(12deg) skew(60deg);
 	transform: rotate(12deg) skew(60deg);
 }
 
-.csstransforms .opened-nav  li:nth-child(3) {
+.csstransforms .opened-nav2  li:nth-child(3) {
 	-webkit-transform: rotate(44deg) skew(60deg);
 	-moz-transform: rotate(44deg) skew(60deg);
 	-ms-transform: rotate(44deg) skew(60deg);
 	transform: rotate(44deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(4) {
+.csstransforms .opened-nav2 li:nth-child(4) {
 	-webkit-transform: rotate(76deg) skew(60deg);
 	-moz-transform: rotate(76deg) skew(60deg);
 	-ms-transform: rotate(76deg) skew(60deg);
 	transform: rotate(76deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(5) {
+.csstransforms .opened-nav2 li:nth-child(5) {
 	-webkit-transform: rotate(108deg) skew(60deg);
 	-moz-transform: rotate(108deg) skew(60deg);
 	-ms-transform: rotate(108deg) skew(60deg);
 	transform: rotate(108deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(6) {
+.csstransforms .opened-nav2 li:nth-child(6) {
 	-webkit-transform: rotate(140deg) skew(60deg);
 	-moz-transform: rotate(140deg) skew(60deg);
 	-ms-transform: rotate(140deg) skew(60deg);
 	transform: rotate(140deg) skew(60deg);
 }
 
-.csstransforms .opened-nav li:nth-child(7) {
+.csstransforms .opened-nav2 li:nth-child(7) {
 	-webkit-transform: rotate(172deg) skew(60deg);
 	-moz-transform: rotate(172deg) skew(60deg);
 	-ms-transform: rotate(172deg) skew(60deg);
 	transform: rotate(172deg) skew(60deg);
 }
 
-.no-csstransforms .cn-wrapper {
+.no-csstransforms .cn-wrapper2 {
 	overflow: hidden;
 	margin: 10em auto;
 	padding: .5em;
 	text-align: center;
 }
 
-.no-csstransforms .cn-wrapper ul {
+.no-csstransforms .cn-wrapper2 ul {
 	display: inline-block;
 }
 
-.no-csstransforms .cn-wrapper li {
+.no-csstransforms .cn-wrapper2 li {
 	float: left;
 	width: 5em;
 	height: 5em;
@@ -259,7 +259,7 @@ body {
 	line-height: 5em;
 }
 
-.no-csstransforms .cn-wrapper li a {
+.no-csstransforms .cn-wrapper2 li a {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -267,18 +267,18 @@ body {
 	text-decoration: none;
 }
 
-.no-csstransforms .cn-wrapper li a:hover,
-.no-csstransforms .cn-wrapper li a:active,
-.no-csstransforms .cn-wrapper li a:focus {
+.no-csstransforms .cn-wrapper2 li a:hover,
+.no-csstransforms .cn-wrapper2 li a:active,
+.no-csstransforms .cn-wrapper2 li a:focus {
 	background-color: #f8f8f8;
 }
 
-.no-csstransforms .cn-wrapper li.active a{
+.no-csstransforms .cn-wrapper2 li.active a{
 	background-color: #6F325C;
 	color: #fff;
 }
 
-.no-csstransforms .cn-button {
+.no-csstransforms .cn-button2 {
 	display: none;
 }
 
@@ -291,11 +291,11 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-	.no-ccstransforms .cn-wrapper {
+	.no-ccstransforms .cn-wrapper2 {
 		padding: .5em;
 	}
 
-	.no-csstransforms .cn-wrapper li {
+	.no-csstransforms .cn-wrapper2 li {
 		width: 4em;
 		height: 4em;
 		font-size: .9em;
@@ -304,17 +304,17 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-	.csstransforms .cn-wrapper {
+	.csstransforms .cn-wrapper2 {
 		font-size: .68em;
 	}
 
-	.cn-button {
+	.cn-button2{
 		font-size: 1em;
 	}
 }
 
 @media only screen and (max-width:420px) {
-	.no-csstransforms .cn-wrapper li {
+	.no-csstransforms .cn-wrapper2 li {
 		width: 100%;
 		height: 3em;
 		line-height: 3em;
